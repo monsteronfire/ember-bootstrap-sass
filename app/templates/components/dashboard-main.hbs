@@ -1,0 +1,27 @@
+<h1 class="page-header">Dashboard</h1>
+
+<h2>Articles</h2>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Header</th>
+        <th>Header</th>
+        <th>Header</th>
+        <th>Header</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each articles as |article|}}
+      <tr>
+        <td>{{ article.[0] }}</td>
+        <td>{{ article.[1] }}</td>
+        <td>{{ article.[2] }}</td>
+        <td>{{ article.[3] }}</td>
+        <td>{{ article.[4] }}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
